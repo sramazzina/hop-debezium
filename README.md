@@ -61,8 +61,8 @@ As soon the changes specified above are set, save the file and type the followin
 
 to start SQL Server 2017, Zookeper, Kafka and Kafka Connect.
 
-## Create the SQL Server database for the sample
-To initialize correctly a SQL Server database to run Debezium, I strongly suggest to use the [inventory.sql script](https://raw.githubusercontent.com/debezium/debezium-examples/master/sql-server-read-replica/debezium-sqlserver-init/inventory.sql)  you find in github [debezium-examples project](https://github.com/debezium/debezium-examples). Feel free to open it on a SQL Server Management Studio sessoin and run it. As soon as the script's execution completes you will find a new test database named testDB that you can use for your samples.
+## Create the SQL Server database to run the sample
+To initialize a SQL Server database and run Debezium to get the changes, I strongly suggest to use the [inventory.sql script](https://raw.githubusercontent.com/debezium/debezium-examples/master/sql-server-read-replica/debezium-sqlserver-init/inventory.sql)  you find in github [debezium-examples project](https://github.com/debezium/debezium-examples). Feel free to open it on a SQL Server Management Studio sessoin and run it. As soon as the script's execution completes you will find a new test database named testDB that you can use for your samples. Further details on SQL Server configuration to properly run Debezium are found in the [documentation provided](https://debezium.io/documentation/reference/1.6/connectors/sqlserver.html) by the Debezium project. 
 
 ## Configure the SQL Server Debezium connector to get all the CDC changes
 For a full overview on Debezium Connector for SQL Server configuration details, you can read the [documentation provided](https://debezium.io/documentation/reference/1.6/connectors/sqlserver.html) by the Debezium project.
@@ -106,4 +106,4 @@ that means the connector is installed and fully working.
 * Try to make some changes to _dbo.customers_ and you will see new events fired by Debezium and new records received by hop
 
 ### Conclusion
-This documentation was written very very quickly therefore I'm sorry if something could be explained better. Please write email me at [sergio.ramazzina@serasoft.it](sergio.ramazzina@serasoft.it) and let me know where I can improve or if there are other sample you would like to see. I hope you found this work useful.
+This documentation was written very very quickly therefore I'm sorry if something could be explained better. Please write email me at [sergio.ramazzina@serasoft.it](mailto:sergio.ramazzina@serasoft.it) and let me know where I can improve or if there are other sample you would like to see. I hope you found this work useful.
