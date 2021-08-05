@@ -57,7 +57,7 @@ To start the SQL Server instance and the kafka middleware needed by Debezium for
 
 As soon the changes specified above are set, save the file and type the following command:
 
-    docker-compose -d up
+    docker-compose up -d
 
 to start SQL Server 2017, Zookeper, Kafka and Kafka Connect.
 
