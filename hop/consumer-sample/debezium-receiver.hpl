@@ -58,7 +58,7 @@
     </partitioning>
     <topic>fullfillment.dbo.customers</topic>
     <consumerGroup/>
-    <pipelinePath>d:\Documenti\01.Clienti\02.Sviluppo\Coster\debezium-poc\messages-processor.hpl</pipelinePath>
+    <pipelinePath>${Internal.Pipeline.Filename.Directory}/messages-processor.hpl</pipelinePath>
     <subTransform>Write to log</subTransform>
     <batchSize>0</batchSize>
     <batchDuration>100</batchDuration>
